@@ -1,0 +1,32 @@
+// Global
+body {
+    background-color: $cust-background;
+    color: $cust-text;
+}
+
+// Header
+.header-container {
+    flex-direction: column;
+    align-items: start !important;
+}
+
+.header-ul > li {
+    display: inline-block;
+}
+
+img.header-menu-image {
+    height: 40px;
+}
+
+// Responsive
+.responsive-hidewhenmobile {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.responsive-hidewhendesktop {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}

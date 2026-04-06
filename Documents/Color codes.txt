@@ -1,0 +1,4 @@
+Background: #F3D9C5
+Primary:	#
+Secondary:	#
+Text:		#6C1B02
