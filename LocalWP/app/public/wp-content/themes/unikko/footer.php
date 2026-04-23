@@ -25,11 +25,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
+					<div>
+						<img class="footer-art" src="<?php echo get_stylesheet_directory_uri(); ?>/img/art-flowers-1.png" />	
+					</div>
 
 				</footer><!-- #colophon -->
 

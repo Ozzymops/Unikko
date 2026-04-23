@@ -22,22 +22,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr ($container ); ?> header-container">
 
         <!-- Top row: only branding -->
-        <div>
+        <div class="nav-logo">
 
-            <?php get_template_part( 'global-templates/navbar-branding' ); ?>
+            <img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-shadow.png" />
 
         </div>
 		
         <!-- Bottom row: menu -->
         <div>
 
-            <ul class="header-ul responsive-hidewhenmobile">
-                <li><a href="<?php echo get_site_url(); ?>/home"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/over-ons"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/verwijzers"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/praktisch"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/agenda"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/contact"><img class="header-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
+            <ul class="nav-ul responsive-hidewhenmobile">
+                <li><a href="<?php echo get_site_url(); ?>/home"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
+                <li><a href="<?php echo get_site_url(); ?>/over-ons"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
+                <li><a href="<?php echo get_site_url(); ?>/verwijzers"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
+                <li><a href="<?php echo get_site_url(); ?>/praktisch"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
+                <li><a href="<?php echo get_site_url(); ?>/agenda"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
+                <li><a href="<?php echo get_site_url(); ?>/contact"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
             </ul>
 
             <button

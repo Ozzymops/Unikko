@@ -2,6 +2,19 @@
 body {
     background-color: $cust-background;
     color: $cust-text;
+    background-image: url("../img/art-corner.png");
+    background-position: right bottom;
+    background-position-y: -400px;
+    background-repeat: no-repeat;
+}
+
+// Font
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 // Header
@@ -10,15 +23,63 @@ body {
     align-items: start !important;
 }
 
-.header-ul > li {
+.nav-ul > li {
     display: inline-block;
 }
 
-img.header-menu-image {
+div.nav-logo {
+    align-self: center;
+    padding: 5px 0 10px 0;
+}
+
+img.nav-logo {
+    height: 100px;
+}
+
+img.nav-menu-image {
     height: 40px;
 }
 
+// Footer
+.footer-art {
+    max-width: 150px;
+    float: right;
+}
+
+// Content
+.entry-title {
+    font-weight: bold;
+}
+
+.header-flower:before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("../img/art-flower-3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+}
+
+hr.wp-block-separator {
+    display: block;
+    border: 0px;
+    height: 50px;
+    background-image: url("../img/art-flower-4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 // Responsive
+body {
+    @media (max-width:767px) {
+        background-position-y: 200px;
+    }
+}
+
 .responsive-hidewhenmobile {
     @media (max-width: 767px) {
         display: none;
@@ -29,4 +90,9 @@ img.header-menu-image {
     @media (min-width: 768px) {
         display: none;
     }
+}
+
+// Hide edit button
+.post-edit-link {
+    display: none;
 }
