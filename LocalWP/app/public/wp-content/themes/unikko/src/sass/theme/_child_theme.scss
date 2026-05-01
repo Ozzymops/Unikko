@@ -4,7 +4,7 @@ body {
     color: $cust-text;
     background-image: url("../img/art-corner.png");
     background-position: right bottom;
-    background-position-y: -400px;
+    background-position-y: 200px;
     background-repeat: no-repeat;
 }
 
@@ -21,6 +21,10 @@ h1, h2, h3 {
 .header-container {
     flex-direction: column;
     align-items: start !important;
+}
+
+#main-nav {
+    background-color: $cust-background !important;
 }
 
 .nav-ul > li {
@@ -42,6 +46,7 @@ img.nav-menu-image {
 
 // Footer
 .footer-art {
+    // make it touch the bottom; root idea
     max-width: 150px;
     float: right;
 }
@@ -51,12 +56,48 @@ img.nav-menu-image {
     font-weight: bold;
 }
 
-.header-flower:before {
+.header-brush-1 {
+    color: #3a4538 !important;
+    background-image: url("../img/art-brush-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    line-height: 2.2;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-brush-2 {
+    color: #3a4538 !important;
+    background-image: url("../img/art-brush-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    line-height: 2.2;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-flower-l:before {
     content: '';
     height: 50px;
     width: 50px;
     display: inline-block;
-    background-image: url("../img/art-flower-3.png");
+    background-image: url("../img/art-flower-header-l.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    vertical-align: middle;
+}
+
+.header-flower-r:before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    background-image: url("../img/art-flower-header-r.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
