@@ -114,6 +114,10 @@ hr.wp-block-separator {
     background-position: center;
 }
 
+.rounded-image img {
+    border-radius: 5%;
+}
+
 // Responsive
 body {
     @media (max-width:767px) {
