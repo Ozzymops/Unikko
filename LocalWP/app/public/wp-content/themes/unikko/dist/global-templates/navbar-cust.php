@@ -27,46 +27,23 @@ $container = get_theme_mod( 'understrap_container_type' );
             <img class="nav-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
 
         </div>
+
+        <div class="nav-subtitle">
+            <p class="nav-subtitle">Praktijk voor individuele begeleiding en coachende & verdiepende gesprekken</p>
+        </div>
 		
         <!-- Bottom row: menu -->
-        <div>
+        <div class="nav-container">
+            <button class="nav-toggle">☰</button>
 
-            <ul class="nav-ul responsive-hidewhenmobile">
-                <li><a href="<?php echo get_site_url(); ?>/index.php/home"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/index.php/over-ons"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/index.php/verwijzers"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/index.php/praktisch"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/index.php/agenda"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
-                <li><a href="<?php echo get_site_url(); ?>/index.php/contact"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
+            <ul class="nav-menu">
+                <li><a href="<?php echo home_url('/home'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
+                <li><a href="<?php echo home_url('/over-ons'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
+                <li><a href="<?php echo home_url('/verwijzers'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
+                <li><a href="<?php echo home_url('/praktisch'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
+                <li><a href="<?php echo home_url('/agenda'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
+                <li><a href="<?php echo home_url('/contact'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
             </ul>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location'  => 'primary',
-                        'container_class' => 'collapse navbar-collapse',
-                        'container_id'    => 'navbarNavDropdown',
-                        'menu_class'      => 'navbar-nav ms-auto responsive-hidewhendesktop',
-                        'fallback_cb'     => '',
-                        'menu_id'         => 'main-menu',
-                        'depth'           => 2,
-                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                    )
-                );
-            ?>
-
         </div>
 
 	</div><!-- .container(-fluid) -->

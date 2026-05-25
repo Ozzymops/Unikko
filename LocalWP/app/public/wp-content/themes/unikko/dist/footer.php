@@ -23,7 +23,22 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<div class="col-md-12">
 
+				<hr />
+
 				<footer class="site-footer" id="colophon">
+
+					<div class="footer-nav">
+						<p><a class="hover-text" href="<?php echo get_site_url(); ?>/index.php/privacy">Privacyverklaring</a></p>
+						<p><a class="hover-text" href="<?php echo get_site_url(); ?>/index.php/disclaimer">Disclaimer</a></p>
+						<p><a class="hover-text" href="<?php echo get_site_url(); ?>/index.php/algemene-voorwaarden">Algemene voorwaarden</a></p>
+					</div>
+
+					<div class="footer-contact">
+						<p>Unikko</p>
+						<p>Huskensweg 37, 6412 SB Heerlen</p>
+						<p>E-mail: <a class="hover-text" href="mailto:mireille@unikko-info.nl">mireille@unikko-info.nl</a> of <a class="hover-text" href="mailto:kim@unikko-info.nl">kim@unikko-info.nl</a>
+						<p>Telefoon: (Mireille) <a class="hover-text" href="tel:+31646740930">+31 6 46 740 930</a> of (Kim) <a class="hover-text" href="tel:+31611864672">+31 6 11 864 672</a>
+					</div>
 
 					<div>
 						<img class="footer-art" src="<?php echo get_stylesheet_directory_uri(); ?>/img/art-flowers-1.png" />	

@@ -4,8 +4,66 @@ body {
     color: $cust-text;
     background-image: url("../img/art-corner.png");
     background-position: right bottom;
-    background-position-y: 200px;
+    // background-position-y: 200px;
     background-repeat: no-repeat;
+}
+
+.side-decoration {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 215px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("../img/sidebar.png");
+}
+
+@media (max-width: 767px) {
+    .side-decoration {
+        display: none;
+    }
+}
+
+.side-decoration.left {
+    left: 0;
+    -webkit-mask-image:-webkit-gradient(linear, to right, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.side-decoration.right {
+    right: 0;
+    -webkit-mask-image:-webkit-gradient(linear, to left, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+// Shared
+.hover-brightness {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition-property: filter;
+    transition-property: filter;
+}
+
+.hover-brightness:hover {
+    filter: brightness(1.15);
+}
+
+.hover-text, .hover-text-old {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    transition-property: color;
+    transition-property: color;
+}
+
+.hover-text:hover {
+    color: $cust-hover;
+}
+
+.hover-text-old:hover {
+    color: $cust-hover-old;
 }
 
 // Font
@@ -13,7 +71,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .footer-nav, .footer-contact {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -24,12 +82,72 @@ h1, h2, h3 {
 }
 
 #main-nav {
-    background-color: $cust-background !important;
+    // background-color: $cust-background !important;
+    background-color: transparent !important;
 }
 
-.nav-ul > li {
-    display: inline-block;
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    flex-shrink: 0;
+}
+
+.nav-menu-image {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: $cust-text;
+}
+
+@media (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
 
 div.nav-logo {
     align-self: center;
@@ -44,9 +162,39 @@ img.nav-menu-image {
     height: 40px;
 }
 
+div.nav-subtitle {
+    align-self: center;
+}
+
+p.nav-subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    color: $cust-text;
+    text-align: center;
+}
+
 // Footer
+.site-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav, .footer-contact {
+    display: flex;
+    flex-flow: column;
+}
+
+.footer-nav {   
+    text-align: end;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
 .footer-art {
-    // make it touch the bottom; root idea
     max-width: 150px;
     float: right;
 }
@@ -115,25 +263,25 @@ hr.wp-block-separator {
 }
 
 .rounded-image img {
-    border-radius: 5%;
+	border-radius: 5%;
 }
 
 // Responsive
 body {
     @media (max-width:767px) {
-        background-position-y: 200px;
+        
     }
 }
 
 .responsive-hidewhenmobile {
     @media (max-width: 767px) {
-        display: none;
+        display: none !important;
     }
 }
 
 .responsive-hidewhendesktop {
     @media (min-width: 768px) {
-        display: none;
+        display: none !important;
     }
 }
 
