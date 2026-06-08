@@ -25,8 +25,6 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
-	<div class="side-decoration left"></div>
-	<div class="side-decoration right"></div>
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">
 

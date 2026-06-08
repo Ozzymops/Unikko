@@ -1,42 +1,67 @@
-// Global
+// -- Understrap --
+.page {
+    position: relative;
+}
+
+.entry-content {
+    position: relative;
+    z-index: 1;
+}
+
+#wrapper-footer {
+    position: relative;
+    padding-top: 0;
+}
+
+// -- Global --
 body {
     background-color: $cust-background;
     color: $cust-text;
+}
+
+hr {
+    width: 100vw;
+}
+
+// Cornerart
+#wrapper-footer::before {
+    content: "";
     background-image: url("../img/art-corner.png");
-    background-position: right bottom;
-    // background-position-y: 200px;
+    background-position: bottom right;
     background-repeat: no-repeat;
-}
-
-.side-decoration {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 215px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: cover;
-    z-index: 0;
+    background-size: contain;
     pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    bottom: calc(100% - 1rem);
+    right: 15%;
+    width: clamp(300px, 35vw, 1000px);
+    height: clamp(300px, 35vw, 1000px);
+}
+
+.unikko-sideart {
     background-image: url("../img/sidebar.png");
+    background-position: top center;
+    background-repeat: repeat-y;
+    background-size: auto;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    top: -300vh;
+    bottom: calc(100% - 1rem);
+    width: 15%;
 }
 
-@media (max-width: 767px) {
-    .side-decoration {
-        display: none;
-    }
-}
-
-.side-decoration.left {
+.unikko-sideart.left {
     left: 0;
-    -webkit-mask-image:-webkit-gradient(linear, to right, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
-.side-decoration.right {
+.unikko-sideart.right {
     right: 0;
-    -webkit-mask-image:-webkit-gradient(linear, to left, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.unikko-footercover {
+    z-index: 99;
 }
 
 // Shared
