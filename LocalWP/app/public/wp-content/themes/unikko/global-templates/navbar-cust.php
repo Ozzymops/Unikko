@@ -37,12 +37,12 @@ $container = get_theme_mod( 'understrap_container_type' );
             <button class="nav-toggle">☰</button>
 
             <ul class="nav-menu">
-                <li><a href="<?php echo home_url('/home'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
-                <li><a href="<?php echo home_url('/over-ons'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
-                <li><a href="<?php echo home_url('/verwijzers'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
-                <li><a href="<?php echo home_url('/praktisch'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
-                <li><a href="<?php echo home_url('/agenda'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
-                <li><a href="<?php echo home_url('/contact'); ?>"><img class="nav-menu-image hover-brightness" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
+                <li><a href="<?php echo home_url('/home'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>
+                <li><a href="<?php echo home_url('/over-ons'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-overons.png" /></a></li>
+                <li><a href="<?php echo home_url('/verwijzers'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-verwijzers.png" /></a></li>
+                <li><a href="<?php echo home_url('/praktisch'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-praktisch.png" /></a></li>
+                <li><a href="<?php echo home_url('/agenda'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-agenda.png" /></a></li>
+                <li><a href="<?php echo home_url('/contact'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-contact.png" /></a></li>
             </ul>
         </div>
 

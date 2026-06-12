@@ -661,7 +661,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1260px;
   }
 }
 .row {
@@ -14966,16 +14966,18 @@ figure.woocommerce-product-gallery__wrapper {
 
 .page {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+}
+
+#page-wrapper {
+  flex: 1 0 auto;
 }
 
 .entry-content {
   position: relative;
   z-index: 1;
-}
-
-#wrapper-footer {
-  position: relative;
-  padding-top: 0;
 }
 
 body {
@@ -14987,32 +14989,17 @@ hr {
   width: 100vw;
 }
 
-#wrapper-footer::before {
-  content: "";
-  background-image: url("../img/art-corner.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  position: absolute;
-  z-index: 0;
-  bottom: calc(100% - 1rem);
-  right: 15%;
-  width: clamp(300px, 35vw, 1000px);
-  height: clamp(300px, 35vw, 1000px);
-}
-
 .unikko-sideart {
+  filter: blur(5px);
   background-image: url("../img/sidebar.png");
   background-position: top center;
   background-repeat: repeat-y;
-  background-size: auto;
+  background-size: cover;
   pointer-events: none;
   position: absolute;
+  height: 100%;
   z-index: 0;
-  top: -300vh;
-  bottom: calc(100% - 1rem);
-  width: 15%;
+  width: 23%;
 }
 
 .unikko-sideart.left {
@@ -15089,10 +15076,21 @@ h1, .h1, h2, .h2, h3, .h3, .footer-nav, .footer-contact {
 }
 
 .nav-menu-image {
+  transition-duration: 0.3s;
+  transition-property: filter;
+  transition-property: filter;
   display: block;
   width: auto;
   max-width: 100%;
   height: auto;
+}
+
+.nav-menu-image:hover {
+  filter: brightness(1.15);
+}
+
+.nav-menu-image.active {
+  filter: drop-shadow(5px 5px 5px #222);
 }
 
 .nav-toggle {
@@ -15105,6 +15103,9 @@ h1, .h1, h2, .h2, h3, .h3, .footer-nav, .footer-contact {
 }
 
 @media (max-width: 767px) {
+  .unikko-sideart {
+    display: none;
+  }
   .nav-toggle {
     display: block;
   }
@@ -15149,6 +15150,12 @@ p.nav-subtitle {
   font-style: italic;
   color: #403433;
   text-align: center;
+}
+
+#wrapper-footer {
+  background-color: #bbaf9f;
+  padding-bottom: 0;
+  margin-top: auto;
 }
 
 .site-footer {
@@ -15626,7 +15633,7 @@ body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-cont
   body.understrap-no-sidebar .alignfull .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignwide .wp-block-cover__inner-container,
   body.understrap-no-sidebar .wp-block-cover.alignfull .wp-block-cover__inner-container {
-    max-width: 1320px;
+    max-width: 1260px;
   }
 }
 body.understrap-no-sidebar .alignwide,

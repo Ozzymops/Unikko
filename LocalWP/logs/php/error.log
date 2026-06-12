@@ -96,3 +96,4 @@ Stack trace:
 #10 E:\Projects\Unikko\LocalWP\app\public\index.php(17): require('E:\\Projects\\Uni...')
 #11 {main}
   thrown in E:\Projects\Unikko\LocalWP\app\public\wp-content\themes\unikko\global-templates\navbar-cust.php on line 34
+[09-Jun-2026 13:42:14 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}

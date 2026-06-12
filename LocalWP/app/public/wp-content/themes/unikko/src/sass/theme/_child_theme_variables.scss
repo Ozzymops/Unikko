@@ -11,3 +11,11 @@ $cust-hover-old: #b24929;
 $cust-navbar-toggler-icon-bg: $cust-text;
 $primary: $cust-text;
 $secondary: $cust-text;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1260px
+) !default;
