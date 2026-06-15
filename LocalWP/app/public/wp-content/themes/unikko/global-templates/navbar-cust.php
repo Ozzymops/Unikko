@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
         <!-- Bottom row: menu -->
         <div class="nav-container">
-            <button class="nav-toggle">☰</button>
+            <button class="nav-toggle">☰ Menu</button>
 
             <ul class="nav-menu">
                 <li><a href="<?php echo home_url('/home'); ?>"><img class="nav-menu-image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/menu-home.png" /></a></li>

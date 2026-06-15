@@ -26,8 +26,8 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">
 
-	<div class="unikko-sideart left"></div>
-	<div class="unikko-sideart right"></div>
+	<div class="unikko-sideframe left"></div>
+	<div class="unikko-sideframe right"></div>
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<header id="wrapper-navbar">

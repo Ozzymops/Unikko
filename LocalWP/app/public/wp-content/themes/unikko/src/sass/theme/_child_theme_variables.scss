@@ -1,16 +1,10 @@
-// Use this file to overwrite the basic Bootstrap variables and add your own variables
-// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
-// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+$unikko-background: #f9f3ea;
+$unikko-text: #403433;
+$unikko-text-hover: #6d6b6b;
 
-$cust-background: #f9f3ea;
-$cust-background-old: #f3d9c5;
-$cust-text: #403433;
-$cust-text-old: #6c1b02;
-$cust-hover: #6d6b6b;;
-$cust-hover-old: #b24929;
-$cust-navbar-toggler-icon-bg: $cust-text;
-$primary: $cust-text;
-$secondary: $cust-text;
+// Overrides
+$primary: $unikko-text;
+$secondary: $unikko-text;
 
 $container-max-widths: (
   sm: 540px,
