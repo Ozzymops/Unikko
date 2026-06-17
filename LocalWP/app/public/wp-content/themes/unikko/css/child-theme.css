@@ -14992,7 +14992,6 @@ h1, .h1, h2, .h2, h3, .h3 {
   position: absolute;
   height: 100%;
   z-index: 0;
-  width: calc((100vw - 1260px) / 2);
 }
 
 .unikko-sideframe.left {
@@ -15006,6 +15005,22 @@ h1, .h1, h2, .h2, h3, .h3 {
 @media (min-width: 768px) {
   .unikko-sideframe {
     display: flex;
+    width: calc((100vw - 720px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .unikko-sideframe {
+    width: calc((100vw - 968px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .unikko-sideframe {
+    width: calc((100vw - 1150px) / 2);
+  }
+}
+@media (min-width: 1400px) {
+  .unikko-sideframe {
+    width: calc((100vw - 1260px) / 2);
   }
 }
 #main-nav {
@@ -15115,6 +15130,21 @@ img.nav-menu-image.active {
 }
 
 @media (min-width: 768px) {
+  img.nav-menu-image {
+    max-height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  img.nav-menu-image {
+    max-height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  img.nav-menu-image {
+    max-height: 60px;
+  }
+}
+@media (min-width: 1400px) {
   img.nav-menu-image {
     max-height: 40px;
   }
